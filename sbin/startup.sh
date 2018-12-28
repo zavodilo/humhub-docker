@@ -12,8 +12,6 @@ HUMHUB_EMAIL=${HUMHUB_EMAIL:-"humhub@example.com"}
 HUMHUB_LANG=${HUMHUB_LANG:-"en-US"}
 HUMHUB_DEBUG=${HUMHUB_DEBUG:-"false"}
 
-HUMHUB_CONFIG_TIMESTAMP=$(echo "<?php echo(time());" | php)
-
 # store enviroment variables
 export | grep PHP >/etc/envvars_php
 

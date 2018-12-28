@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+source /etc/envvars_php
+exec env /usr/sbin/php-fpm7 --fpm-config /etc/php-fpm.d/pool.conf -O -F

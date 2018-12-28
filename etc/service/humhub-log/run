@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+mkdir -p /var/www/localhost/htdocs/protected/runtime/logs/ 
+touch /var/www/localhost/htdocs/protected/runtime/logs/app.log
+
+exec tail -f /var/www/localhost/htdocs/protected/runtime/logs/app.log

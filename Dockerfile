@@ -50,6 +50,8 @@ RUN apk add --no-cache \
     nodejs \
     npm
 
+RUN npm config set unsafe-perm true
+
 RUN npm install grunt
 RUN npm install -g grunt-cli
 
